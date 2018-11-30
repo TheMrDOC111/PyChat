@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PyChat</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">PyChat</string>
+    <string name="nav_header_subtitle">github.com/ITMOPyChat/PyChat</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_exit">Exit</string>
+    <string name="hint_for_input">Enter your message</string>
+    <string name="send_button">Send</string>
+
+    <string name="loginText">Enter your login</string>
+    <string name="passwordText">Enter your password</string>
+    <string name="loginButton">Sign in</string>
+    <string name="regButton">Sign up</string>
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/registrationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:onClick="registration"
+        android:text="@string/regButton"
+        app:layout_constraintStart_toEndOf="@+id/authorizeButton"
+        app:layout_constraintTop_toBottomOf="@+id/passwodText" />
+
+    <Button
+        android:id="@+id/authorizeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="8dp"
+        android:onClick="login"
+        android:text="@string/loginButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwodText" />
+
+    <EditText
+        android:id="@+id/passwodText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/passwordText"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginText"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/loginText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/loginText"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
