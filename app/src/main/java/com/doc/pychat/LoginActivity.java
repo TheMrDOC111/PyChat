@@ -41,8 +41,11 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void login(View v) {
+        String login = loginText.getText().toString();
+        String password = passwordText.getText().toString();
 
-        String[] message = {"auth", loginText.getText().toString(), passwordText.getText().toString()};
+
+        String[] message = {"auth", login, String.valueOf(password.hashCode())};
         loginText.setText("");
         passwordText.setText("");
         final String text = JsonParser.jsonEncrypt(message);
@@ -59,7 +62,10 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void registration(View v) {
-        String[] message = {"registration", loginText.getText().toString(), passwordText.getText().toString()};
+        String login = loginText.getText().toString();
+        String password = passwordText.getText().toString();
+
+        String[] message = {"registration", login, String.valueOf(password.hashCode())};
         loginText.setText("");
         passwordText.setText("");
         final String text = JsonParser.jsonEncrypt(message);
